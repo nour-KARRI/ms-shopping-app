@@ -4,139 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f5ab5bb-a95d-4680-93f1-01219d594dc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/nour/ms/gateway/ApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/nour/ms/gateway/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/nour/ms/gateway/routes/Routes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/nour/ms/gateway/ApiGatewayApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/mysql/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/nour/ms/inventory/InventoryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/nour/ms/inventory/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/nour/ms/inventory/controller/InventoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/nour/ms/inventory/model/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/nour/ms/inventory/reporditory/InventoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/nour/ms/inventory/service/InventoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/db/migration/V1__init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/db/migration/V2__add_inventory.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/test/java/com/nour/ms/inventory/InventoryServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/test/java/com/nour/ms/inventory/TestInventoryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/test/java/com/nour/ms/inventory/TestcontainersConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/OrderServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/client/InventoryClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/config/RestClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/dto/OrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/db/migration/V1__init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/test/java/com/nour/ms/order/OrderServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/test/java/com/nour/ms/order/TestOrderServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/test/java/com/nour/ms/order/TestcontainersConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/test/java/com/nour/ms/order/stubs/InventoryClientStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/test/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/.mongodb/mongosh/67444613af8fb63b2c6d327f_log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/.mongodb/mongosh/674446145376656ef0769fdf_log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/.mongodb/mongosh/config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/.mongodb/mongosh/snippets/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/WiredTiger" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/WiredTiger.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/WiredTiger.turtle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/WiredTiger.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/WiredTigerHS.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/_mdb_catalog.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/collection-0-4459923211144888941.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/collection-2-4459923211144888941.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/collection-4-4459923211144888941.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/collection-7-4459923211144888941.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.2024-11-25T09-40-35Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.2024-11-25T09-40-53Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.2024-11-27T15-13-16Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.2024-11-28T08-33-40Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.2024-11-29T08-31-59Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.2024-12-02T08-40-52Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.2024-12-03T08-50-18Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.2024-12-04T08-37-23Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.2024-12-05T08-34-17Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.2024-12-06T08-29-27Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.2024-12-06T09-56-33Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/diagnostic.data/metrics.interim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/index-1-4459923211144888941.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/index-3-4459923211144888941.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/index-5-4459923211144888941.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/index-6-4459923211144888941.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/index-8-4459923211144888941.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/index-9-4459923211144888941.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/journal/WiredTigerLog.0000000011" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/journal/WiredTigerPreplog.0000000001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/journal/WiredTigerPreplog.0000000002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/mongod.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/sizeStorer.wt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/data/storage.bson" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nour/ms/product/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nour/ms/product/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nour/ms/product/dto/ProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nour/ms/product/dto/ProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nour/ms/product/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nour/ms/product/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nour/ms/product/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/test/java/com/nour/ms/product/ProductServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ms-shopping-app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/data/.mongodb/mongosh/mongosh_repl_history" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nour/microservices/product/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nour/ms/product/ProductServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/test/java/com/nour/microservices/product/ProductServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/test/java/com/nour/microservices/product/TestProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/test/java/com/nour/ms/product/TestProductServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/test/java/com/nour/microservices/product/TestcontainersConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/test/java/com/nour/ms/product/TestcontainersConfiguration.java" afterDir="false" />
+    <list default="true" id="4f5ab5bb-a95d-4680-93f1-01219d594dc2" name="Changes" comment="Add kafka to order-service">
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/event/OrderPlacedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/dto/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/dto/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -145,18 +38,40 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectId" id="2pwIGc8sSIKECilbkFPVytWCUAj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "last_opened_file_path": "C:/Users/a857296/Projets Formation/Programming techie tuto/ms-shopping-back/api-gateway"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ProductServiceApplication">
+  <component name="RunManager" selected="Application.OrderServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nour.ms.gateway.ApiGatewayApplication" />
       <module name="api-gateway" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.nour.ms.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nour.ms.inventory.InventoryServiceApplication" />
+      <module name="inventory-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nour.ms.inventory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -190,6 +105,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in order-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="order-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="product-service" />
       <method v="2">
@@ -204,36 +127,30 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
-      <method v="2" />
-    </configuration>
-    <configuration name="order-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="order-service/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="product-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="product-service/docker-compose.yml" />
-        </settings>
+        <settings />
       </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProductServiceApplication" />
-        <item itemvalue="Docker.product-service: Compose Deployment" />
         <item itemvalue="Application.OrderServiceApplication" />
-        <item itemvalue="Docker.order-service: Compose Deployment" />
+        <item itemvalue="Application.InventoryServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.ProductServiceApplication" />
+        <item itemvalue="JUnit.All in order-service" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f5ab5bb-a95d-4680-93f1-01219d594dc2" name="Changes" comment="" />
+      <created>1733670624452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733670624452</updated>
+    </task>
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,5 +163,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add kafka to order-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add kafka to order-service" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/service/OrderService.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
