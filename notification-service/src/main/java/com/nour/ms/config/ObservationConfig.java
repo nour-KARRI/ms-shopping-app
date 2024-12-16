@@ -1,4 +1,4 @@
-package com.nour.ms.order.config;
+package com.nour.ms.config;
 
 import io.micrometer.observation.ObservationRegistry;
 import io.micrometer.observation.aop.ObservedAspect;
