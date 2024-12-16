@@ -4,54 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f5ab5bb-a95d-4680-93f1-01219d594dc2" name="Changes" comment="Add Observability with Grafana Stack">
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/0c21be89-2c5d-424f-86c5-b269f3cf8970/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/0c21be89-2c5d-424f-86c5-b269f3cf8970/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/0c21be89-2c5d-424f-86c5-b269f3cf8970/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/1d7da35c-50fe-48a7-95f7-d30e0e3e7dd1/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/1d7da35c-50fe-48a7-95f7-d30e0e3e7dd1/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/1d7da35c-50fe-48a7-95f7-d30e0e3e7dd1/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/3318f3b5-4a67-4686-b1f7-281c9f9270a0/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/3318f3b5-4a67-4686-b1f7-281c9f9270a0/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/3318f3b5-4a67-4686-b1f7-281c9f9270a0/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/95c7a059-0bab-439a-974b-cf7b5b9ca698/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/95c7a059-0bab-439a-974b-cf7b5b9ca698/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/95c7a059-0bab-439a-974b-cf7b5b9ca698/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/967905f0-bd25-4f29-a2db-c5e9740266dd/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/967905f0-bd25-4f29-a2db-c5e9740266dd/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/967905f0-bd25-4f29-a2db-c5e9740266dd/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/b2dc3b06-b1c9-403b-86ce-dbda41be3377/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/b2dc3b06-b1c9-403b-86ce-dbda41be3377/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/b2dc3b06-b1c9-403b-86ce-dbda41be3377/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/f713449d-905a-454a-b4d4-9355b40151e7/bloom-0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/f713449d-905a-454a-b4d4-9355b40151e7/data.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/f713449d-905a-454a-b4d4-9355b40151e7/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/index.json.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/nour/ms/gateway/config/ObservationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/nour/ms/config/ObservationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/logback-spring.xml" afterDir="false" />
+    <list default="true" id="0bad1e8e-41f2-4f6d-b062-a9dd66e0fb93" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/1198193fadd80ad8bae77d04feaf545533fa88c0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37d164d06baf8eb3e51df4cc23c4423396f27763" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54bbdce7478dcbdd692398e630cfd000a2d5a000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f82a8c342e5a708a86517ee409f9bb03b4b27d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/e/7e35b8348ccc1e9f1dba3711386c5b915291620b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95af87d0af9700b85205950218ae65af4a0c6ec1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0d76ce2586441302d32f58972e7a708c7ae6c17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e48699b5e2d44dcfebe8dd2c7a85a1c4a61b8444" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f225a2a3978acc2502c993dbba364b45fa26dd05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe77d5d1439f26e353a42bbd38dece2467ff6558" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ff1c5d5433a8148c17672f6832c630bb2426e4e9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/1/1198193fadd80ad8bae77d04feaf545533fa88c0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/7/37d164d06baf8eb3e51df4cc23c4423396f27763" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/4/54bbdce7478dcbdd692398e630cfd000a2d5a000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/f/6f82a8c342e5a708a86517ee409f9bb03b4b27d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/e/7e35b8348ccc1e9f1dba3711386c5b915291620b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/5/95af87d0af9700b85205950218ae65af4a0c6ec1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/0/d0d76ce2586441302d32f58972e7a708c7ae6c17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/4/e48699b5e2d44dcfebe8dd2c7a85a1c4a61b8444" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/2/f225a2a3978acc2502c993dbba364b45fa26dd05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/e/fe77d5d1439f26e353a42bbd38dece2467ff6558" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/f/ff1c5d5433a8148c17672f6832c630bb2426e4e9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/docker/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/docker/prometheus/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/db/migration/V2__add_inventory.sql" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/db/migration/V2__add_inventory.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/config/ObservationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/config/ObservationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/config/RestClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/config/RestClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/3318f3b5-4a67-4686-b1f7-281c9f9270a0/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/index.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/index.json.gz" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,184 +58,27 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2pwIGc8sSIKECilbkFPVytWCUAj" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2qIqmcGkhfK8rq2hd6AcJijRqWY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showScratchesAndConsoles" value="false" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "C:/Users/a857296/Projets Formation/Programming techie tuto/ms-shopping-back",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "last_opened_file_path": "C:/Users/a857296/Projets Formation/ms-shopping-back",
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.nour.ms.order.event" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-back\order-service\src\main\resources" />
-      <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-back\api-gateway\src\main\resources" />
-      <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-back\inventory-service\src\main\resources" />
-      <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-back\notification-service\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.nour.ms.gateway.config" />
-      <recent name="com.nour.ms.config" />
-      <recent name="com.nour.ms.inventory.config" />
-      <recent name="com.nour.ms.order.config" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.InventoryServiceApplication">
-    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nour.ms.gateway.ApiGatewayApplication" />
-      <module name="api-gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nour.ms.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InventoryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nour.ms.inventory.InventoryServiceApplication" />
-      <module name="inventory-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nour.ms.inventory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nour.ms.order.OrderServiceApplication" />
-      <module name="order-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nour.ms.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nour.ms.product.ProductServiceApplication" />
-      <module name="product-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nour.ms.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.nour.ms.NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nour.ms.NotificationServiceApplication" />
-      <module name="notification-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nour.ms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="product-service" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="product-service" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml">
-        <settings />
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.InventoryServiceApplication" />
-        <item itemvalue="Application.com.nour.ms.NotificationServiceApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.ProductServiceApplication" />
-        <item itemvalue="Application.OrderServiceApplication" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4f5ab5bb-a95d-4680-93f1-01219d594dc2" name="Changes" comment="" />
-      <created>1733670624452</created>
+      <changelist id="0bad1e8e-41f2-4f6d-b062-a9dd66e0fb93" name="Changes" comment="" />
+      <created>1734360597759</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1733670624452</updated>
+      <updated>1734360597759</updated>
     </task>
-    <task id="LOCAL-00001" summary="Add kafka to order-service">
-      <option name="closed" value="true" />
-      <created>1733750654358</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1733750654358</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add Observability with Grafana Stack">
-      <option name="closed" value="true" />
-      <created>1733933647002</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1733933647002</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add kafka to order-service" />
-    <MESSAGE value="Add Observability with Grafana Stack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Observability with Grafana Stack" />
   </component>
 </project>

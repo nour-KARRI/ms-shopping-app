@@ -1,0 +1,54 @@
+
+.body{
+    margin: 20px;
+    display: flex;
+}
+button{
+    background-color: #22c55e;;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+}
+
+button:disabled, button[disabled]{
+  border: 1px solid #999999;
+  background-color: #a6ea76;
+}
+
+.btn-create-product{
+    position: absolute;
+    right: 10px;
+}
+
+mat-card{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.align-mat-cards{
+    display: flex;
+}
+
+.row{
+    display: flex;
+}
+
+.btn-submit{
+    text-align: right;
+    margin-left: 400px;
+}
+
+input.ng-invalid.ng-touched {
+    border: red 1px solid;
+}
+
+.text-success{
+    color: #22c55e;
+}
+
+.text-failed{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,29 @@
+mat-toolbar{
+  margin-bottom: 20px;
+}
+
+.topnav-right{
+  position:absolute;
+  right:100px;
+}
+
+li{
+  display: inline;
+  margin-right: 10px;
+}
+
+a {
+    color: rgb(219, 211, 211);
+    text-decoration: none;
+    font-weight: normal;
+    
+    text-align: left;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .username{
+    font-size: 15px;
+  }

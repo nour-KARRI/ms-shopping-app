@@ -1,0 +1,57 @@
+<div class="body">
+    <div>
+        
+        <div>
+            <h2>Products ({{products.length !== 0 ? products.length:0}})</h2>
+        </div>
+        <div *ngIf="!products"><span class="text-failed">No products found!</span></div>
+        <div *ngIf="orderSuccess"><span class="text-success">Order Placed Successfully</span></div>
+        <div *ngIf="orderFailed"><span class="text-failed">Order Failed, please try again</span></div>
+        <div *ngIf="products">
+            <span *ngIf="products.length===0">
+                <span class="text-failed">No Products Found !</span>
+            </span>
+            
+            <span *ngIf="products.length>0">
+                <span *ngFor="let product of products">
+                    <mat-card appearance="outlined">
+                        <div class="align-mat-cards">                       
+                                
+                                <form #formRef="ngForm" (ngSubmit)="onSubmit(product, formRef)">
+                                        <div class="row">
+                                            <div>
+                                                <mat-card-content>
+                                                <span style="font-weight: 500;">{{product.name}} </span>
+                                                - <span style="color: gray;">Price: {{product.price}}</span>
+                                                <br>
+                                                <span>Quantity: <input name="quantity" type="number" ngModel #quantityRef="ngModel" #quantityInput required></span>    
+                                                </mat-card-content>
+                                            </div>
+                                            
+                                            <div class="btn-submit">
+                                                <mat-card-actions>
+                                                    <button type="submit" mat-button [disabled]="formRef.form.invalid">Order Now</button>
+                                                </mat-card-actions>
+                                            </div>
+                                        </div>
+                                        <div *ngIf="quantityRef.invalid && quantityRef.touched">
+                                            <div *ngIf="quantityRef.errors">
+                                                <span class="text-failed">Quantity is manditory</span>
+                                            </div>
+                                        </div>
+                                </form>
+                            </div>                    
+                    </mat-card>
+                </span>
+            </span>
+    </div>
+    </div>
+    <div class="btn-create-product">
+        <button (click)="goToCreateProductPage()">Create Product</button>
+    </div>
+</div>
+
+
+
+
+

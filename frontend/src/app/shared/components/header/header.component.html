@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+    <span routerLink="/">MS Shop</span>
+    <ul class="topnav-right">
+       <li *ngIf="!isAuthenticated"><a (click)="login()">Login</a></li>
+       <li *ngIf="isAuthenticated">
+        <span class="username">Welcome {{username}}</span>
+        <br>
+        <a (click)="logout()">Logout</a>
+        </li>
+    </ul>
+</mat-toolbar>
