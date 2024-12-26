@@ -46,19 +46,6 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:29092,PLAINTEXT_HOST://localhost:9092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-
-  schema-registry:
-    image: confluentinc/cp-schema-registry:7.5.0
-    hostname: schema-registry
-    container_name: schema-registry
-    depends_on:
-      - broker
-    ports:
-      - "8085:8081"
-    environment:
-      SCHEMA_REGISTRY_HOST_NAME: schema-registry
-      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: 'broker:29092'
-      SCHEMA_REGISTRY_LISTENERS: http://schema-registry:8081
   kafka-ui:
     container_name: kafka-ui
     image: provectuslabs/kafka-ui:latest
@@ -66,11 +53,9 @@ services:
       - "8086:8080"
     depends_on:
       - broker
-      - schema-registry
     environment:
       KAFKA_CLUSTERS_NAME: local
       KAFKA_CLUSTERS_BOOTSTRAPSERVERS: broker:29092
-      #    KAFKA_CLUSTERS_SCHEMAREGISTRY: http://schema-registry:8081
       DYNAMIC_CONFIG_ENABLED: 'true'
 
   keycloak-mysql:
@@ -108,7 +93,7 @@ services:
     ports:
       - "3100:3100"
   prometheus:
-    image: prom/prometheus
+    image: prom/prometheus:v2.46.0
     container_name: prometheus
     command:
       - --enable-feature=exemplar-storage
@@ -118,7 +103,7 @@ services:
     ports:
       - "9090:9090"
   tempo:
-    image: grafana/tempo
+    image: grafana/tempo:2.2.2
     container_name: tempo
     command: [ "-config.file=/etc/tempo.yaml" ]
     volumes:
@@ -128,7 +113,7 @@ services:
       - "3110:3100"  # Tempo
       - "9411:9411" # zipkin
   grafana:
-    image: grafana/grafana
+    image: grafana/grafana:10.1.0
     container_name: grafana
     volumes:
       - ./docker/grafana:/etc/grafana/provisioning/datasources:ro

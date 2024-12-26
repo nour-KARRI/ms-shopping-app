@@ -4,83 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bad1e8e-41f2-4f6d-b062-a9dd66e0fb93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="0bad1e8e-41f2-4f6d-b062-a9dd66e0fb93" name="Changes" comment="correction observability">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/05167ed4-ff94-4b34-b655-e7a5a84bc663/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/05167ed4-ff94-4b34-b655-e7a5a84bc663/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/05167ed4-ff94-4b34-b655-e7a5a84bc663/meta.compacted.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/0c21be89-2c5d-424f-86c5-b269f3cf8970/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/0c21be89-2c5d-424f-86c5-b269f3cf8970/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/0c21be89-2c5d-424f-86c5-b269f3cf8970/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/1d7da35c-50fe-48a7-95f7-d30e0e3e7dd1/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/1d7da35c-50fe-48a7-95f7-d30e0e3e7dd1/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/1d7da35c-50fe-48a7-95f7-d30e0e3e7dd1/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/3318f3b5-4a67-4686-b1f7-281c9f9270a0/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/3318f3b5-4a67-4686-b1f7-281c9f9270a0/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/3318f3b5-4a67-4686-b1f7-281c9f9270a0/meta.compacted.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/35873026-7d79-41b8-9fac-93e82b1db84a/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/35873026-7d79-41b8-9fac-93e82b1db84a/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/35873026-7d79-41b8-9fac-93e82b1db84a/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/95c7a059-0bab-439a-974b-cf7b5b9ca698/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/95c7a059-0bab-439a-974b-cf7b5b9ca698/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/95c7a059-0bab-439a-974b-cf7b5b9ca698/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/967905f0-bd25-4f29-a2db-c5e9740266dd/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/967905f0-bd25-4f29-a2db-c5e9740266dd/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/967905f0-bd25-4f29-a2db-c5e9740266dd/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/b2dc3b06-b1c9-403b-86ce-dbda41be3377/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/b2dc3b06-b1c9-403b-86ce-dbda41be3377/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/b2dc3b06-b1c9-403b-86ce-dbda41be3377/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/f713449d-905a-454a-b4d4-9355b40151e7/bloom-0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/f713449d-905a-454a-b4d4-9355b40151e7/data.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/f713449d-905a-454a-b4d4-9355b40151e7/meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/single-tenant/index.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/data/tempo/blocks/tempo_cluster_seed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/docker/grafana/dashboard.json" beforeDir="false" afterPath="$PROJECT_DIR$/docker/grafana/dashboard.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/docker/grafana/datasource.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/grafana/datasource.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/docker/keycloak/realms/realm-export.json" beforeDir="false" afterPath="$PROJECT_DIR$/docker/keycloak/realms/realm-export.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/docker/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/prometheus/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/docker/tempo/tempo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/tempo/tempo.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/nour/ms/gateway/config/ObservationConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.development.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.development.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/mysql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/nour/ms/gateway/ApiGatewayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/test/java/com/nour/ms/inventory/InventoryServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/test/java/com/nour/ms/inventory/InventoryServiceApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/test/java/com/nour/ms/NotificationServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/test/java/com/nour/ms/TestNotificationServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/test/java/com/nour/ms/TestcontainersConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/nour/ms/order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/test/java/com/nour/ms/order/OrderServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/test/java/com/nour/ms/order/OrderServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/test/java/com/nour/ms/order/stubs/InventoryClientStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/test/java/com/nour/ms/order/stubs/InventoryClientStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/test/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/logback-spring.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,20 +48,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/a857296/Projets Formation/Programming techie tuto/ms-shopping-app&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "last_opened_file_path": "C:/Users/a857296/Projets Formation/Programming techie tuto/ms-shopping-app/notification-service",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-app\notification-service" />
+      <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-app\order-service" />
+      <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-app\product-service\src\test" />
+      <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-app\product-service\src\main\resources" />
+      <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-app\api-gateway" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-app\product-service" />
+      <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-app\product-config" />
       <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-app\docker" />
       <recent name="C:\Users\a857296\Projets Formation\Programming techie tuto\ms-shopping-app" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ApiGatewayApplication">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn spring-boot :build-image -DskipeTests -DdockerPassword=dckr_pat_k1-d6f0_bV1anMdca32MwkB8ys0" />
+      <command value="mvn clean spring-boot:build-image -DskipeTests -DdockerPassword=dckr_pat_k1-d6f0_bV1anMdca32MwkB8ys0" />
+      <command value="mvn spring-boot:build-image -DskipeTests -DdockerPassword=dckr_pat_k1-d6f0_bV1anMdca32MwkB8ys0" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.tempo: Compose Deployment">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nour.ms.gateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -146,32 +105,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nour.ms.NotificationServiceApplication" />
-      <module name="notification-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nour.ms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nour.ms.order.OrderServiceApplication" />
-      <module name="order-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nour.ms.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProductServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nour.ms.product.ProductServiceApplication" />
       <module name="product-service" />
@@ -185,19 +118,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <shortenClasspath name="ARGS_FILE" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.mongodb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mongodb" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.tempo: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="tempo" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NotificationServiceApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.OrderServiceApplication" />
-        <item itemvalue="Application.InventoryServiceApplication" />
         <item itemvalue="Application.ProductServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.InventoryServiceApplication" />
+        <item itemvalue="Docker.docker-compose.yml.tempo: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +176,30 @@
       <option name="presentableId" value="Default" />
       <updated>1734360597759</updated>
     </task>
+    <task id="LOCAL-00001" summary="correction observability">
+      <option name="closed" value="true" />
+      <created>1734517228819</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734517228819</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="correction observability" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction observability" />
   </component>
 </project>

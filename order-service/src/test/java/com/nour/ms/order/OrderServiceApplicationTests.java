@@ -42,7 +42,10 @@ class OrderServiceApplicationTests {
 				   {
 			          "skuCode":"iphone_15",
 			          "price":"1000",
-			          "quantity":"1"
+			          "quantity":"1",
+			          "userDetails":{
+			          	"email":"nour@atos.net"
+			          }
 				   }
 			""";
 
@@ -59,6 +62,32 @@ class OrderServiceApplicationTests {
 			.body().asString();
 
 	assertThat(responseBodyString, Matchers.is("Order placed Successfully"));
+	}
+
+	@Test
+	void shouldFailedWhenProductIsNotInStock() {
+
+		String requestBody = """
+				   {
+			          "skuCode":"iphone_15",
+			          "price":"1000",
+			          "quantity":"1000",
+			          "userDetails":{
+			          	"email":"nour@atos.net"
+			          }
+				   }
+			""";
+
+		InventoryClientStub.stubInventoryCall("iphone_15", 1000);
+
+		RestAssured.given()
+				.contentType("application/json")
+				.body(requestBody)
+				.when()
+				.post("/api/order")
+				.then()
+				.log().all()
+				.statusCode(400);
 	}
 
 }

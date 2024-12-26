@@ -35,7 +35,7 @@ class InventoryServiceApplicationTests {
 		var response = RestAssured.given()
 				.contentType("application/json")
 				.when()
-				.get("/api/inventory?skuCode=iphone_15&quantity=100")
+				.get("/api/inventory?skuCode=1111&quantity=100")
 				.then()
 				.statusCode(200)
 				.extract()
@@ -43,5 +43,4 @@ class InventoryServiceApplicationTests {
 
 		assertTrue(response);
 	}
-
 }
