@@ -1,26 +1,18 @@
-version: '3.8'
+
 services:
   mongodb:
     image: mongo:7.0.5
     container_name: mongodb
     ports:
       - "27017:27017"
+    networks:
+      - my-network
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: password
       MONGO_INITDB_DATABASE: product-service
     volumes:
       - ./volume-data/data-mongodb:/data/db
-  mysql:
-    image: mysql:8.3.0
-    container_name: mysql
-    ports:
-      - "3306:3306"
-    environment:
-      MYSQL_ROOT_PASSWORD: mysql
-    volumes:
-      - ./volume-data/mysql:/var/lib/mysql
-      - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   zookeeper:
     image: confluentinc/cp-zookeeper:7.5.0
@@ -28,6 +20,8 @@ services:
     container_name: zookeeper
     ports:
       - "2181:2181"
+    networks:
+      - my-network
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
@@ -38,19 +32,23 @@ services:
     ports:
       - "9092:9092"
       - "29092:29092"
+    networks:
+      - my-network
     depends_on:
       - zookeeper
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:29092,PLAINTEXT_HOST://broker:9092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
   kafka-ui:
     container_name: kafka-ui
     image: provectuslabs/kafka-ui:latest
     ports:
       - "8086:8080"
+    networks:
+      - my-network
     depends_on:
       - broker
     environment:
@@ -61,6 +59,8 @@ services:
   keycloak-mysql:
     container_name: keycloak-mysql
     image: mysql:8
+    networks:
+      - my-network
     volumes:
       - ./volume-data/mysql_keycloak_data:/var/lib/mysql
     environment:
@@ -81,7 +81,9 @@ services:
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
     ports:
-      - "8181:8080"
+      - "8080:8080"
+    networks:
+      - my-network
     volumes:
       - ./docker/keycloak/realms/:/opt/keycloak/data/import/
     depends_on:
@@ -90,11 +92,15 @@ services:
     image: grafana/loki:main
     container_name: loki
     command: [ "-config.file=/etc/loki/local-config.yaml" ]
+    networks:
+      - my-network
     ports:
       - "3100:3100"
   prometheus:
     image: prom/prometheus:v2.46.0
     container_name: prometheus
+    networks:
+      - my-network
     command:
       - --enable-feature=exemplar-storage
       - --config.file=/etc/prometheus/prometheus.yml
@@ -103,18 +109,22 @@ services:
     ports:
       - "9090:9090"
   tempo:
-    image: grafana/tempo:2.2.2
+    image: grafana/tempo
     container_name: tempo
     command: [ "-config.file=/etc/tempo.yaml" ]
+    networks:
+      - my-network
     volumes:
       - ./docker/tempo/tempo.yml:/etc/tempo.yaml:ro
       - ./data/tempo:/tmp/tempo
     ports:
-      - "3110:3100"  # Tempo
+      - "3200:3200"  # Tempo
       - "9411:9411" # zipkin
   grafana:
     image: grafana/grafana:10.1.0
     container_name: grafana
+    networks:
+      - my-network
     volumes:
       - ./docker/grafana:/etc/grafana/provisioning/datasources:ro
     environment:
@@ -123,3 +133,93 @@ services:
       - GF_AUTH_DISABLE_LOGIN_FORM=true
     ports:
       - "3000:3000"
+
+  gateway:
+    image: gateway:latest
+    container_name: gateway
+    ports:
+      - "9100:9100"
+    networks:
+      - my-network
+    depends_on:
+      - tempo
+    profiles:
+      - docker
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      MANAGEMENT.ZIPKIN.TRACING.ENDPOINT: http://tempo:9411
+
+  product:
+    image: product-service:latest
+    container_name: product
+    ports:
+      - "8787:8787"
+    networks:
+      - my-network
+    environment:
+      MONGODB_URI: mongodb://root:password@mongodb:27017/product-service?authSource=admin
+      SPRING_PROFILES_ACTIVE: docker
+    profiles:
+      - docker
+
+  frontend:
+    image: angular:latest
+    container_name: angular
+    ports:
+      - "4200:4200"
+    networks:
+      - my-network
+
+  mysql:
+    image: mysql:8.3.0
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - my-network
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+    volumes:
+      - ./volume-data/mysql:/var/lib/mysql
+      - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  inventory:
+    image: inventory:latest
+    container_name: inventory
+    ports:
+      - "8082:8082"
+    networks:
+      - my-network
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/inventory_service
+      SPRING_PROFILES_ACTIVE: docker
+
+  order:
+    image: order-service:latest
+    container_name: order
+    ports:
+      - "8081:8081"
+    networks:
+      - my-network
+    depends_on:
+      - inventory
+      - loki
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/order_service
+      SPRING_PROFILES_ACTIVE: docker
+
+  notification:
+    image: notification-service:latest
+    container_name: notification
+    ports:
+      - "8083:8083"
+    networks:
+      - my-network
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+networks:
+  my-network:
+    driver: bridge

@@ -6,18 +6,18 @@ import { UserProfile } from './user.profile';
   providedIn: 'root'
 })
 export class KeycloakService {
-  
+
   private _keycloak: Keycloak | undefined
   private _profile: UserProfile | undefined
 
   get keycloak(){
     if (!this._keycloak) {
       this._keycloak = new Keycloak({
-        url: 'http://localhost:8181',
+        url: 'http://keycloak:8080',
         realm: 'spring-ms-security-realm',
         clientId: 'angular-client'
       })
-    } 
+    }
     return this._keycloak
   }
 
@@ -26,7 +26,7 @@ export class KeycloakService {
   }
 
   constructor() { }
-  
+
   async init() {
     const authenticated = await this.keycloak?.init({
       onLoad: 'login-required'
@@ -45,5 +45,5 @@ export class KeycloakService {
   logout(){
     return this.keycloak?.logout({redirectUri: 'http://localhost:4200'})
   }
-  
+
 }
