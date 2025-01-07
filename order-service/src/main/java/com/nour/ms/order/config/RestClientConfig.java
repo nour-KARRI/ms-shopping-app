@@ -20,6 +20,7 @@ public class RestClientConfig {
 
 	@Value("${inventory.url}")
 	private String inventoryServiceUrl;
+
 	private final ObservationRegistry observationRegistry;
 
 	@Bean
@@ -34,6 +35,8 @@ public class RestClientConfig {
 		return httpServiceProxyFactory.createClient(InventoryClient.class);
 	}
 
+
+//TODO: Change deprecated function
 	private ClientHttpRequestFactory getClientRequestFactory() {
 		ClientHttpRequestFactorySettings clientHttpRequestFactorySettings = ClientHttpRequestFactorySettings.DEFAULTS
 				.withConnectTimeout(Duration.ofSeconds(3))
