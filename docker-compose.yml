@@ -135,7 +135,7 @@ services:
       - "3000:3000"
 
   gateway:
-    image: gateway:latest
+    image: api-gateway:latest
     container_name: gateway
     ports:
       - "9100:9100"
@@ -147,7 +147,6 @@ services:
       - docker
     environment:
       SPRING_PROFILES_ACTIVE: docker
-      MANAGEMENT.ZIPKIN.TRACING.ENDPOINT: http://tempo:9411
 
   product:
     image: product-service:latest
