@@ -3,6 +3,7 @@ package com.nour.ms.order;
 import com.nour.ms.order.stubs.InventoryClientStub;
 import io.restassured.RestAssured;
 import org.hamcrest.Matchers;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,6 +19,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureWireMock(port = 0)
 class OrderServiceApplicationTests {
+
+	String requestBody;
 	@ServiceConnection
 	static MySQLContainer  mySQLContainer = new MySQLContainer<>("mysql:8.3.0");
 
@@ -34,14 +37,20 @@ class OrderServiceApplicationTests {
 		mySQLContainer.start();
 	}
 
+	@AfterEach
+	void tearDown() {
+		requestBody = "";
+	}
+
 	@Test
 	void shouldPlaceOrder() {
 
-	String requestBody = """
+		System.out.println("requestBody should pass: "+ requestBody);
+	 requestBody = """
 				   {
 			          "skuCode":"1111",
 			          "price":"1000",
-			          "quantity":"1",
+			          "quantity":1,
 			          "userDetails":{
 			          	"email":"nour@atos.net"
 			          }
@@ -63,14 +72,17 @@ class OrderServiceApplicationTests {
 	assertThat(responseBodyString, Matchers.is("Order placed Successfully"));
 	}
 
+
 	@Test
 	void shouldFailedWhenProductIsNotInStock() {
+
+		System.out.println("requestBody failed: "+ requestBody);
 
 		String requestBody = """
 				   {
 			          "skuCode":"1111",
 			          "price":"1000",
-			          "quantity":"1000",
+			          "quantity":1000,
 			          "userDetails":{
 			          	"email":"nour@atos.net"
 			          }
