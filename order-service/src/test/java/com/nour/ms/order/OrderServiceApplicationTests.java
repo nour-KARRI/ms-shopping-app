@@ -77,7 +77,7 @@ class OrderServiceApplicationTests {
 				   }
 			""";
 
-		InventoryClientStub.stubInventoryCall("1111", 1000);
+		InventoryClientStub.failedStubInventoryCall("1111", 1000);
 
 		RestAssured.given()
 				.contentType("application/json")
