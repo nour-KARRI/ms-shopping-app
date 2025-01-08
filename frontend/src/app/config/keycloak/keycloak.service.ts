@@ -13,7 +13,7 @@ export class KeycloakService {
   get keycloak(){
     if (!this._keycloak) {
       this._keycloak = new Keycloak({
-        url: 'http://keycloak:8080',
+        url: 'http://localhost:8080',
         realm: 'spring-ms-security-realm',
         clientId: 'angular-client'
       })
