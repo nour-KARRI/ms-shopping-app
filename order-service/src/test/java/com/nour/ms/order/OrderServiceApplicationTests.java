@@ -2,7 +2,6 @@ package com.nour.ms.order;
 
 import com.nour.ms.order.stubs.InventoryClientStub;
 import io.restassured.RestAssured;
-import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -40,7 +39,7 @@ class OrderServiceApplicationTests {
 
 	String requestBody = """
 				   {
-			          "skuCode":"iphone_15",
+			          "skuCode":"1111",
 			          "price":"1000",
 			          "quantity":"1",
 			          "userDetails":{
@@ -49,7 +48,7 @@ class OrderServiceApplicationTests {
 				   }
 			""";
 
-	InventoryClientStub.stubInventoryCall("iphone_15", 1);
+	InventoryClientStub.stubInventoryCall("1111", 1);
 
 	var responseBodyString = RestAssured.given()
 			.contentType("application/json")
@@ -69,7 +68,7 @@ class OrderServiceApplicationTests {
 
 		String requestBody = """
 				   {
-			          "skuCode":"iphone_15",
+			          "skuCode":"1111",
 			          "price":"1000",
 			          "quantity":"1000",
 			          "userDetails":{
@@ -78,7 +77,7 @@ class OrderServiceApplicationTests {
 				   }
 			""";
 
-		InventoryClientStub.stubInventoryCall("iphone_15", 1000);
+		InventoryClientStub.stubInventoryCall("1111", 1000);
 
 		RestAssured.given()
 				.contentType("application/json")
