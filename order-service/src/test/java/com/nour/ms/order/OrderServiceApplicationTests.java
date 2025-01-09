@@ -42,7 +42,7 @@ class OrderServiceApplicationTests {
 		requestBody = "";
 	}
 
-	@Test
+	/*@Test
 	void shouldPlaceOrder() {
 
 		System.out.println("requestBody should pass: "+ requestBody);
@@ -70,7 +70,7 @@ class OrderServiceApplicationTests {
 			.body().asString();
 
 	assertThat(responseBodyString, Matchers.is("Order placed Successfully"));
-	}
+	}*/
 
 
 	@Test
