@@ -22,7 +22,7 @@ public class OrderController {
 		if (response.equals("Order placed Successfully")){
 			return new ResponseEntity<>("Order placed Successfully", HttpStatus.CREATED) ;
 		}else{
-			return new ResponseEntity<>("Ordering failed", HttpStatus.BAD_REQUEST) ;
+			return new ResponseEntity<>("Ordering failed", HttpStatus.INTERNAL_SERVER_ERROR) ;
 		}
 
 	}

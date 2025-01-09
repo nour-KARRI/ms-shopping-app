@@ -49,7 +49,7 @@ class OrderServiceApplicationTests {
 	 requestBody = """
 				   {
 			          "skuCode":"1111",
-			          "price":"1000",
+			          "price":"50",
 			          "quantity":1,
 			          "userDetails":{
 			          	"email":"nour@atos.net"
@@ -81,24 +81,27 @@ class OrderServiceApplicationTests {
 		String requestBody = """
 				   {
 			          "skuCode":"1111",
-			          "price":"1000",
-			          "quantity":1000,
+			          "price":"23",
+			          "quantity":2025,
 			          "userDetails":{
 			          	"email":"nour@atos.net"
 			          }
 				   }
 			""";
 
-		InventoryClientStub.failedStubInventoryCall("1111", 1000);
+		InventoryClientStub.failedStubInventoryCall("1111", 2025);
 
-		RestAssured.given()
+		var responseBodyString = RestAssured.given()
 				.contentType("application/json")
 				.body(requestBody)
 				.when()
 				.post("/api/order")
 				.then()
-				.log().all()
-				.statusCode(400);
+				.statusCode(500)
+				.extract()
+				.body().asString();
+
+		assertThat(responseBodyString, Matchers.is("Ordering failed"));
 	}
 
 }
